@@ -17,7 +17,8 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"],
   },
   output: {
-    path: `${__dirname}/dist`,
+    path: path.join(__dirname, "dist"),
+    publicPath: "/",
     filename: "bundle.js",
   },
   plugins: [
